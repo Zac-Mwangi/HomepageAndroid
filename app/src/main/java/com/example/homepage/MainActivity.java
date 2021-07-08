@@ -43,53 +43,49 @@ public class MainActivity extends AppCompatActivity {
 
         if(role == "manager") {
             imageList.add(R.drawable.openshift);
-            imageList.add(R.drawable.openshift);
-            imageList.add(R.drawable.openshift);
-            imageList.add(R.drawable.openshift);
-            imageList.add(R.drawable.openshift);
-            imageList.add(R.drawable.openshift);
-            imageList.add(R.drawable.openshift);
-            imageList.add(R.drawable.openshift);
-            imageList.add(R.drawable.openshift);
-            imageList.add(R.drawable.openshift);
+            imageList.add(R.drawable.close);
+            imageList.add(R.drawable.account);
+            imageList.add(R.drawable.tick_mark);
+            imageList.add(R.drawable.expenses);
+            imageList.add(R.drawable.commission);
+            imageList.add(R.drawable.loan);
+            imageList.add(R.drawable.pay);
+            imageList.add(R.drawable.report2);
+            imageList.add(R.drawable.logout3);
 
 
 
 
-
-            imageDescriptionList.add("Start");
-            imageDescriptionList.add("Start");
-            imageDescriptionList.add("Start");
-            imageDescriptionList.add("Start");
-            imageDescriptionList.add("Start");
-            imageDescriptionList.add("Start");
-            imageDescriptionList.add("Start");
-            imageDescriptionList.add("Start");
-            imageDescriptionList.add("Start");
-            imageDescriptionList.add("Start");
-
+            imageDescriptionList.add("Start Shift");
+            imageDescriptionList.add("End Shift");
+            imageDescriptionList.add("Customer Add");
+            imageDescriptionList.add("Pay Customer");
+            imageDescriptionList.add("Expenses");
+            imageDescriptionList.add("Commissions");
+            imageDescriptionList.add("Loan Out");
+            imageDescriptionList.add("Repayment");
+            imageDescriptionList.add("Reports");
+            imageDescriptionList.add("Logout");
 
 
         }
         if(role == "teller") {
             imageList.add(R.drawable.openshift);
-            imageList.add(R.drawable.openshift);
-            imageList.add(R.drawable.openshift);
-            imageList.add(R.drawable.openshift);
-            imageList.add(R.drawable.openshift);
-            imageList.add(R.drawable.openshift);
+            imageList.add(R.drawable.close);
+            imageList.add(R.drawable.account);
+            imageList.add(R.drawable.tick_mark);
+            imageList.add(R.drawable.report2);
+            imageList.add(R.drawable.logout3);
 
 
             imageDescriptionList.add("Start Shift");
-            imageDescriptionList.add("Start Shift");
-            imageDescriptionList.add("Start Shift");
-            imageDescriptionList.add("Start Shift");
-            imageDescriptionList.add("Start Shift");
-            imageDescriptionList.add("Start Shift");
-
+            imageDescriptionList.add("End Shift");
+            imageDescriptionList.add("Customer Add");
+            imageDescriptionList.add("Pay Customer");
+            imageDescriptionList.add("Reports");
+            imageDescriptionList.add("Logout");
         }
         //after list are ready we send it to the adapter
-
         recyclerHome.setAdapter(new HomeAdapter(imageList,imageDescriptionList));
         }
 }
