@@ -29,9 +29,6 @@ public class MainActivity extends AppCompatActivity {
     }
     public void initialize(){
 
-        String role;
-
-        role = "manager";
 
         recyclerHome = findViewById(R.id.recyclerView);
 
@@ -41,34 +38,27 @@ public class MainActivity extends AppCompatActivity {
         recyclerHome.setLayoutManager(gridLayoutManager);
         //next create an adapter for the recyclerView in  HomeAdapter;
 
-        if(role.equals("manager")) {
-            imageList.add(R.drawable.openshift);
-            imageList.add(R.drawable.close);
-            imageList.add(R.drawable.account);
-            imageList.add(R.drawable.tick_mark);
-            imageList.add(R.drawable.expenses);
-            imageList.add(R.drawable.commission);
-            imageList.add(R.drawable.loan);
-            imageList.add(R.drawable.pay);
-            imageList.add(R.drawable.report2);
-            imageList.add(R.drawable.logout3);
+        imageList.add(R.drawable.openshift);
+        imageList.add(R.drawable.close);
+        imageList.add(R.drawable.account);
+        imageList.add(R.drawable.tick_mark);
+        imageList.add(R.drawable.expenses);
+        imageList.add(R.drawable.commission);
+        imageList.add(R.drawable.loan);
+        imageList.add(R.drawable.pay);
+        imageList.add(R.drawable.report2);
+        imageList.add(R.drawable.logout3);
 
-
-
-
-            imageDescriptionList.add("Start Shift");
-            imageDescriptionList.add("End Shift");
-            imageDescriptionList.add("Customer Add");
-            imageDescriptionList.add("Pay Customer");
-            imageDescriptionList.add("Expenses");
-            imageDescriptionList.add("Commissions");
-            imageDescriptionList.add("Loan Out");
-            imageDescriptionList.add("Repayment");
-            imageDescriptionList.add("Reports");
-            imageDescriptionList.add("Logout");
-
-
-        }
+        imageDescriptionList.add(getResources().getString(R.string.start));
+        imageDescriptionList.add(getResources().getString(R.string.end));
+        imageDescriptionList.add(getResources().getString(R.string.customer_add));
+        imageDescriptionList.add(getResources().getString(R.string.pay_cust));
+        imageDescriptionList.add(getResources().getString(R.string.exp));
+        imageDescriptionList.add(getResources().getString(R.string.comm));
+        imageDescriptionList.add(getResources().getString(R.string.loan));
+        imageDescriptionList.add(getResources().getString(R.string.rep));
+        imageDescriptionList.add(getResources().getString(R.string.report));
+        imageDescriptionList.add(getResources().getString(R.string.log));
         //after list are ready we send it to the adapter
         recyclerHome.setAdapter(new HomeAdapter(imageList,imageDescriptionList));
         }

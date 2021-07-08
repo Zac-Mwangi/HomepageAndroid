@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">HomePage</string>
+
+
+    <string name="start">Start</string>
+    <string name="end">End</string>
+    <string name="customer_add">Add Customer</string>
+    <string name="pay_cust">Pay</string>
+    <string name="exp">Expenses</string>
+    <string name="comm">Commission</string>
+    <string name="loan">Loan</string>
+    <string name="rep">Repayment</string>
+    <string name="report">Report</string>
+    <string name="log">Logout</string>
 </resources>
