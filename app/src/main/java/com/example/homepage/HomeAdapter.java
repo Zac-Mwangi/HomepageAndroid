@@ -57,40 +57,37 @@ class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.HomeView> {
         holder.imageDescr.setText(imageDescriptionList.get(position));
 
         //finally run
-        holder.hCV.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String page = imageDescriptionList.get(position);
-                if(page.equals(mContext.getResources().getString(R.string.start))){
-                    Toast.makeText(mContext, "Start", Toast.LENGTH_SHORT).show();
-                }
-                if(page.equals(mContext.getResources().getString(R.string.end))){
-                    Toast.makeText(mContext, "end", Toast.LENGTH_SHORT).show();
-                }
-                if(page.equals(mContext.getResources().getString(R.string.customer_add))){
-                    Toast.makeText(mContext, "customer_add", Toast.LENGTH_SHORT).show();
-                }
-                if(page.equals(mContext.getResources().getString(R.string.pay_cust))){
-                    Toast.makeText(mContext, "pay customer", Toast.LENGTH_SHORT).show();
-                }
-                if(page.equals(mContext.getResources().getString(R.string.exp))){
-                    Toast.makeText(mContext, "expenses", Toast.LENGTH_SHORT).show();
-                }
-                if(page.equals(mContext.getResources().getString(R.string.comm))){
-                    Toast.makeText(mContext, "commission", Toast.LENGTH_SHORT).show();
-                }
-                if(page.equals(mContext.getResources().getString(R.string.loan))){
-                    Toast.makeText(mContext, "loan", Toast.LENGTH_SHORT).show();
-                }
-                if(page.equals(mContext.getResources().getString(R.string.rep))){
-                    Toast.makeText(mContext, "repayment", Toast.LENGTH_SHORT).show();
-                }
-                if(page.equals(mContext.getResources().getString(R.string.report))){
-                    Toast.makeText(mContext, "report", Toast.LENGTH_SHORT).show();
-                }
-                if(page.equals(mContext.getResources().getString(R.string.log))){
-                    Toast.makeText(mContext, "logout", Toast.LENGTH_SHORT).show();
-                }
+        holder.hCV.setOnClickListener(view -> {
+            String page = imageDescriptionList.get(position);
+            if(page.equals(mContext.getResources().getString(R.string.start))){
+                Toast.makeText(mContext, "Start", Toast.LENGTH_SHORT).show();
+            }
+            if(page.equals(mContext.getResources().getString(R.string.end))){
+                Toast.makeText(mContext, "end", Toast.LENGTH_SHORT).show();
+            }
+            if(page.equals(mContext.getResources().getString(R.string.customer_add))){
+                Toast.makeText(mContext, "customer_add", Toast.LENGTH_SHORT).show();
+            }
+            if(page.equals(mContext.getResources().getString(R.string.pay_cust))){
+                Toast.makeText(mContext, "pay customer", Toast.LENGTH_SHORT).show();
+            }
+            if(page.equals(mContext.getResources().getString(R.string.exp))){
+                Toast.makeText(mContext, "expenses", Toast.LENGTH_SHORT).show();
+            }
+            if(page.equals(mContext.getResources().getString(R.string.comm))){
+                Toast.makeText(mContext, "commission", Toast.LENGTH_SHORT).show();
+            }
+            if(page.equals(mContext.getResources().getString(R.string.loan))){
+                Toast.makeText(mContext, "loan", Toast.LENGTH_SHORT).show();
+            }
+            if(page.equals(mContext.getResources().getString(R.string.rep))){
+                Toast.makeText(mContext, "repayment", Toast.LENGTH_SHORT).show();
+            }
+            if(page.equals(mContext.getResources().getString(R.string.report))){
+                Toast.makeText(mContext, "report", Toast.LENGTH_SHORT).show();
+            }
+            if(page.equals(mContext.getResources().getString(R.string.log))){
+                Toast.makeText(mContext, "logout", Toast.LENGTH_SHORT).show();
             }
         });
 
