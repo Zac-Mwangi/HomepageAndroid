@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerHome.setLayoutManager(gridLayoutManager);
         //next create an adapter for the recyclerView in  HomeAdapter;
 
-        if(role == "manager") {
+        if(role.equals("manager")) {
             imageList.add(R.drawable.openshift);
             imageList.add(R.drawable.close);
             imageList.add(R.drawable.account);
